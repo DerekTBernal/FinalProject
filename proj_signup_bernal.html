@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-type">
+    <title>Sign Up!</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- blurred background -->
+    <div class="poverty-background"></div>
+
+    <header class="signup_header">
+        <h1>To Talk, Discuss & Study</h1>
+        <p>Analyze and Act as Anti-Poverty Initiatives.</p>
+    </header>
+    <form novalidate onsubmit="return false">
+        <label>First name*: </label><input id="firstname" type="text" required> <span id="firstnameREQUIRED"></span><br>
+        <label>Last name*: </label><input id="lastname" type="text" required> <span id="lastnameREQUIRED"></span><br>
+        <label>Sex*:</label> <span id="sexREQUIRED"></span><br>
+        <input type="radio" name="sex" value="Male"><label>Male</label><br>
+        <input type="radio" name="sex" value="Female"><label>Female</label><br>
+        <input type="radio" name="sex" value="Prefer not to say"><label>Prefer not to say</label><br><br>
+        <label>Email address*: </label><input id="emailaddr" type="text" required> <span id="emailaddrREQUIRED"></span><br>
+        <label>Password*: </label><input id="pword" type="password" required> <span id="pwordREQUIRED"></span><br>
+        <label>Contact number: </label><input id="contactno" type="text"><br><br>
+        <label>Why you're supporting this campaign:*</label>
+        <br><textarea id="reason" rows="8" cols="40"></textarea><br><span id="reasonREQUIRED"></span><br><br>
+        <input type="submit" value="Sign Up!" onclick="signUp()">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

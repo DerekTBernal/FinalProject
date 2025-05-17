@@ -1,0 +1,462 @@
+body {
+    margin: 0;
+    background-color: #222;
+}
+
+nav ul {
+    position: fixed;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: auto;
+    padding-left: 10px;
+    transition: 0.1s;
+    font-size: 30px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+nav ul:hover {
+    font-size: 40px;
+}
+
+nav li {
+    font-family: arial;
+    margin: 0px;
+    padding: 10px;
+    transition: 0.5s;
+    background-color: black;
+    font-size: inherit;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav li:hover {
+    margin: 8px;
+    padding: 2px;
+    background-color: white;
+    color: black;
+}
+
+header .banner {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+    padding: 100px;
+    width: 100%;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    color: white;
+    font-family: Courier;
+    background-color: #111;
+    font-size: 40px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
+* {
+    z-index: 1;
+}
+.poverty-background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(8px);
+    height: 100vh;
+    width: 100vw;
+    background-image: url('images/poverty-banner.jpg');
+}
+
+.profile {
+    width: 500px;
+    height: 300px;
+    padding: 10px;
+    z-index: 2;
+    position: absolute;
+    top: calc(50vh - 155px);
+    left: calc(50vw - 255px);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+.signup_header {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #282828;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+header .banner:hover {
+    font-size: 50px;
+}
+
+textarea {
+    resize: none;
+}
+
+form {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    margin: auto;
+    width: 500px;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+form span {
+    color: red;
+}
+
+form input, textarea, input:focus, textarea:focus{
+    background-color:#252525;
+    color: white;
+    border-radius: 5px;
+}
+
+form input[type=radio] {
+    accent-color: #252525;
+}
+
+form input[type=submit] {
+    font-size: 20px;
+}
+
+main section.home-content {
+    width: 75%;
+    overflow: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+main aside.home-content {
+    width: 25%;
+    overflow: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.home-content.right-line {
+    border-right: 2px solid #101010;
+}
+
+.home-content-endline {
+    border-style: solid;
+    border-color: currentColor;
+    color: #101010;
+    clear: both;
+}
+
+.centered {
+    margin: auto;
+}
+
+.home-content img {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.home-content img.float-left {
+    margin-right: 15px;
+}
+
+.home-content img.float-right {
+    margin-left: 15px;
+}
+
+.rounded_img {
+    border-radius: 50%;
+    overflow: hidden;
+    shape-outside: circle();
+    transition: 1s;
+}
+
+.rounded_img:hover {
+    transform: scale(1.2) rotate(-5deg);
+}
+
+header .banner h1 {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: inherit;
+    transition: 0.5s;
+    font-family: arial;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.home-content h1,
+#contact-list h1 {
+    text-indent: 1em;
+    font-size: 40px;
+    transition: 0.5s;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: normal;
+    color: white;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.home-content h1:hover,
+#contact-list h1:hover {
+    border: none;
+    font-size: 45px;
+    background-color: #171717;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
+}
+
+.home-content p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-family: helvetica;
+    text-indent: 2em;
+}
+
+.rel-bottom-left {
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+}
+
+.note {
+    font-style: italic;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: lightblue;
+    transition: 0.5s;
+    font-family: inherit;
+    font-size: inherit;
+    border-bottom: 2px solid transparent;
+}
+
+.link[href^="http"] {
+    color: grey;
+}
+
+.article-list li {
+    color: white;
+    list-style-type: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.indent-2 {
+    text-indent: 2em;
+}
+
+a.link:hover {
+    transform: translate(0, -5px);
+    border-bottom: 2px solid lightblue;
+}
+
+a.link:visited {
+    color: red;
+}
+
+a.link:visited:hover {
+    border-bottom: 2px solid red;
+}
+
+article {
+    width: 50%;
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+article h1 {
+    color: white;
+    font-size: 35px;
+    font-style: italic;
+}
+
+article h2 {
+    color: white;
+    font-size: 25px;
+}
+
+article p {
+    text-indent: 2em;
+    color: white;
+    font-size: 20px;
+}
+
+article table {
+    border-collapse: collapse;
+    color: white;
+}
+
+article th,
+article td {
+    border: 2px solid white;
+    padding: 2px;
+}
+
+article hr {
+    clear: both;
+}
+
+article table {
+    margin: 0px 10px 0px 10px;
+}
+
+article iframe {
+    border: 0;
+}
+
+.no-indent {
+    text-indent: 0px;
+}
+
+footer p {
+    position: relative;
+    bottom: 0;
+    left: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-style: italic;
+}
+
+#walking-sprite {
+    background: url('images/anim_sprite.png') no-repeat;
+    animation: walking-sprite-anim 1s steps(1) infinite;
+    background-size: 512px 512px;
+    background-position-y: -52px;
+    width: 48px;
+    height: 68px;
+    image-rendering: pixelated;
+    transition: 0.5s;
+}
+
+#walking-sprite:hover {
+    transform: translateY(-5px);
+}
+
+#contact-list {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#contact-list .link {
+    margin-left: 10px;
+}
+
+@keyframes walking-sprite-anim {
+    0% {
+        background-position-x: -40px;
+    }
+    25% {
+        background-position-x: -168px;
+    }
+    50% {
+        background-position-x: -296px;
+    }
+    75% {
+        background-position-x: -424px;
+    }
+}
+
+.half-block {
+    width: 50%;
+}
+
+.facebook-logo {
+    background: url('images/socmed_logos.png') no-repeat -24px -21px;
+    background-size: 240px 240px;
+    width: 55px;
+    height: 57px;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+.facebook-logo:hover {
+    transform: translateY(-5px);
+}
+
+::selection {
+    color: black;
+    background-color: white;
+}
+
+article table tr:nth-child(odd) td {
+    color: purple;
+}
+
+article table tr:nth-child(even) {
+    color: blue;
+}
+
+.quiz-section {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-family: helvetica;
+}
+
+.quiz {
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid white;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.quiz h2 {
+   width: 90%;
+   margin: auto;
+}
+
+.quiz button {
+   font-size: 15px;
+   color: white;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   box-sizing: border-box;
+   border: 2px solid #0e0e0e;
+   background-color: #1f1f1f;
+   transition: 0.5s;
+}
+
+.quiz button:hover {
+   background-color: #0e0e0e;
+}
+
+.quiz .choice {
+   width: 100%;
+}
+
+.quiz-score {
+   border: 2px solid white;
+   border-radius: 15px;
+   color: white;
+   width: 40px;
+   text-align: center;
+   margin-left: 15px;
+}
