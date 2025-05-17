@@ -6,3 +6,6 @@ Going to previous questions would only allow you to see the correct answers, not
 
 After submitting your answer to the fifth question, your score is then displayed with some feedback.
 
+The sign up and the profile page has also been integrated, at the navbar.
+
+Website link: https://derektbernal.github.io/FinalProject/
