@@ -21,7 +21,6 @@ function signUp() {
     }
     var radiosToCheck = document.getElementsByName("sex");
     for(var i = 0; i < radiosToCheck.length; ++i) {
-        console.log(radiosToCheck[i].checked);
         if(radiosToCheck[i].checked) {
             localStorage.setItem("profile", JSON.stringify({
                 "firstname": firstname.value,
