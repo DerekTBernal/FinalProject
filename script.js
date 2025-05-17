@@ -16,12 +16,11 @@ function checkRequiredtxtFields() {
     return goodToGo;
 }
 function signUp() {
-    if(!checkRequiredtxtFields()) {
-        return;
-    }
+    var didTxtFields = checkRequiredtxtFields();
+    var didRadioField = false;
     var radiosToCheck = document.getElementsByName("sex");
     for(var i = 0; i < radiosToCheck.length; ++i) {
-        if(radiosToCheck[i].checked) {
+        if(radiosToCheck[i].checked && didTxtFields) {
             localStorage.setItem("profile", JSON.stringify({
                 "firstname": firstname.value,
                 "lastname": lastname.value,
@@ -33,9 +32,14 @@ function signUp() {
             }));
             window.location.href = "proj_profile_bernal.html";
             return;
+        } else if(radiosToCheck[i].checked) {
+            didRadioField = true;
         }
     }
-    sexREQUIRED.innerHTML = "REQUIRED";
+    if(!didRadioField)
+        sexREQUIRED.innerHTML = "REQUIRED";
+    else
+        sexREQUIRED.innerHTML = "";
 }
 
 function loadProfile() {
@@ -58,8 +62,8 @@ function loadProfile() {
     }
 }
 
-if(signup_nav != undefined) {
+if(document.getElementById("signup_nav") != undefined) {
     if(localStorage.getItem("profile") !== null) {
-        signup_nav.remove();
+        document.getElementById("signup_nav").remove();
     }
 }
