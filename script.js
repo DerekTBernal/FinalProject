@@ -35,6 +35,7 @@ function signUp() {
             return;
         }
     }
+    sexREQUIRED.innerHTML = "REQUIRED";
 }
 
 function loadProfile() {
