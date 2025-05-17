@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz on Poverty - TTDS</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation bar -->
+        <nav>
+            <ul>
+                <li class="float-left">
+                    <a href="../index.html">Home</a>
+                </li>
+                <li class="float-left">
+                    <a href="../info/contacts.html">Contacts</a>
+                </li>
+                <li class="float-left">
+                    <a href="../proj_profile_bernal.html">Profile</a>
+                </li>
+                <li class="float-left">
+                    Quiz
+                </li>
+                <li id="signup" class="float-left">
+                    <a href="../proj_signup_bernal.html" id="signup_nav">Sign Up!</a>
+                </li>
+                <li class="float-right">
+                    TTDS
+                </li>
+            </ul>
+        </nav>
+        <!-- Banner with text -->
+        <div class="banner" style="background-image: url(&quot;../images/home-banner.png&quot;)">
+            <h1>Quiz on Poverty</h1>
+        </div>
+    </header>
+    <main>
+	<!-- Quiz section -->
+        <section class="quiz-section centered half-block">
+
+            <h2>Instructions</h2>
+            <p>-> Read the question</p>
+            <p>-> Click one of the choices as your answer</p>
+            <p>-> Click submit to validate your answer </p>
+            <p>-> Click the next button, and continue answering!</p>
+            <p>Note that the previous button only shows the correct answers, not your own previous answers.</p>
+            <!-- Actual quiz -->
+            <div class="quiz">
+                <h2 id="question"></h2>
+                <button onclick="choose(1)" class="choice" id="ch1"></button>
+                <button onclick="choose(2)" class="choice" id="ch2"></button>
+                <button onclick="choose(3)" class="choice" id="ch3"></button>
+                <button onclick="choose(4)" class="choice" id="ch4"></button>
+                <button onclick="prev()">Prev</button><button onclick="submit()">Submit</button><button onclick="next()">Next</button>
+            </div>
+
+            <!-- Score and feedback -->
+            <p class="float-left">Score:</p>
+            <div class="quiz-score float-left">
+                <p id="score_display">?</p>
+                <hr>
+                <p>5</p>
+            </div>
+            <br style="clear: left"><p id="feedback"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Made by Derek T. Bernal of 9 - Lithium</p>
+    </footer>
+    <script src="quiz.js"></script>
+    <script src="../script.js"></script>
+</body>
+
+</html>
